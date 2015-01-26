@@ -1,10 +1,21 @@
 // Normally mainpage styles
+%regular
+	color: #fff
+	+g(#31c1b8, #198275) 
+	+border-radius(4px)
+	width: 170px 
+	height: 50px 
+	cursor: pointer 
+	text-transform: uppercase 
+.out.landing
+	background-color: #080B0D 
+
 .content.landing
 	background-image: url("../img/landing_bg.jpg")
 	background-repeat: no-repeat 
 
 .content.landing
-	.inn
+	>.inn
 		background: transparent 
 	.content__top
 		+clr
@@ -30,30 +41,59 @@
 				text-transform: uppercase 
 				margin-top: 85px 
 				input
-					width: 170px 
-					height: 50px 
-					+border-radius(4px)
+					@extend %regular
 					margin: 0 5px
-					cursor: pointer 
-				.regular
-					+g(#31c1b8, #198275) 
 				.tran
 					background: transparent
 					border: 3px solid #fff  
 		.phones
 			float: right
 	.content__bott
+		margin-top: 130px 
+		background: rgba(#000, .8)
+		padding: 40px 0
 		.title
-			margin: 0 auto
 			text-transform: uppercase 
 			color: #FFF 
+			text-align: center
 			p
 				 
 				font-size: 14px 
 			h2
 				font-family: "Roboto"
-				font-size: 48px
+				font-size: 52px
 				font-weight: 100 
+		.about
+			+clr
+			text-align: center
+			display: table
+			.phn
+				display: table-cell
+				vertical-align: top
+				padding: 0 20px 
+				width: 33% 
+				h3
+					color: #26a69a
+					text-transform: uppercase  
+					font-family: "Roboto"
+					font-weight: 300 
+					font-size: 18px
+					margin: 15px 0 
+				p
+					font-family: "Roboto"
+					font-size: 14px
+					color: #fff
+		.btn.regular
+			@extend %regular
+			position: relative
+			left: 50%
+			margin-left: -85px
+			margin-top: 35px 
+
+
+					
+			
+
 
 
 
