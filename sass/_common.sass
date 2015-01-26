@@ -46,7 +46,10 @@
 // 	+png(blabla)
 // p
 // 	+jpg(bla)
+@import url("http://fonts.googleapis.com/css?family=Roboto:500,300,700,400")
 
+%size 
+	width: 960px 
 
 body
 	font-family: Arial, sans-serif 
@@ -54,7 +57,76 @@ body
 	line-height: 1.4
 
 
-// common blocks      
+// common blocks 
+.reg-pop-up
+	display: none     
+.header
+	width: 100%
+	background-color: #1c262a
+	.inn
+		@extend %size
+		margin: 0 auto
+		padding: 10px 0
+		position: relative
+		+clr
+	&__logo
+		float: left
+		position: absolute
+		top: 50%
+		+translate(0, -50%) 
+		+s(logo)
+	&__search
+		display: inline-block
+		margin-left: 211px
+		position: relative
+		i
+			+s(search)
+			display: inline-block
+			position: absolute
+			left: -40px
+			top: 50%
+			+translate(0, -50%) 
+		input
+			width: 290px 
+			background-color: #0d1113
+			font-family: "Roboto" 
+			font-size: 14px 
+			padding:  10px	
+			+placeholder-color(rgba(#fff, .5))
+			border-radius: 2px !important
+			border: 1px solid #0d1012
+			+box-shadow(0 0 0 1px rgba(#000, .2))
+			position: relative
+			color: #fff
+
+	&__nav
+		position: absolute
+		top: 50%
+		right: 0
+		+translate(0, -50%) 
+		li
+			float: left
+			position: relative
+			margin-left: 31px
+			&:last-child
+				margin-right: 10px 
+			a
+				display: inline-block
+			a.bell
+				+s(bell)
+			a.phone
+				+s(phone)
+			a.down
+				+s(down)
+				position: relative
+				top: 7px
+.content
+	@extend %size
+	margin: 0 auto
+	background-color: #0f1416
+
+
+
 
 
 
