@@ -1,0 +1,115 @@
+.content
+	&__main.detail
+		.cover
+			position: relative
+			.person
+				.text
+					display: table
+					.photo
+						width: 60px
+						height: 60px
+						+border-radius(50%) 
+						overflow: hidden
+						display: table-cell
+						vertical-align: middle
+						padding-right: 20px
+			.nav
+				a.is-active
+					i
+						display: inline-block
+						+s(down)
+						position: absolute
+						right: 0
+						top: 15px
+			.add
+				width: 60px
+				height: 60px
+				+border-radius(50%)
+				background-color: #26a69a
+				text-align: center
+				position: absolute
+				right: 20px
+				bottom: 9px
+				+box-shadow(2px 2px 10px #141b1f)
+				a
+					color: #fff 
+					font-family: "Roboto"
+					font-weight: 100
+					font-size: 48px   
+					position: relative
+					top: -5px 
+		.photos
+			padding: 5px 0px 50px 5px
+			+clr
+			.col1, .col2
+				width: 314px
+				display: inline-block
+				vertical-align: top
+				padding: 0 
+				>.img
+					width: 100%
+					padding: 0 !important
+					margin: 0 !important
+					margin-bottom: -4px
+					img
+						height: 100% 
+				.feature
+					position: relative
+					padding: 0
+					// margin-bottom: 4px 
+					.descr
+						display: none 
+						width: 100%
+						height: 100%
+						background: rgba(#000, .5)   
+						position: absolute	
+						top: 0
+						color: #fff
+						.inn
+							position: absolute
+							top: 50%
+							+translate(0,-50%) 
+							.message
+								display: table
+								padding-left: 8px 
+								.box
+									width: 100%
+									font-family: "Roboto"
+									font-weight: 500  
+									display: table-cell 
+									vertical-align: middle
+									+clr
+									.msg
+										display: inline-block
+										font-family: "Roboto" 
+										span
+											color: #239e95 
+								.img
+									width: 32px
+									height: 32px
+									+border-radius(50%)
+									padding-right: 10px  
+									img
+										width: 100% 
+						.bot
+							position: absolute
+							right: 0
+							bottom: 0
+							ul
+								padding: 0 10px 10px 0
+								li
+									display: inline-block
+									padding-left: 20px
+									+opacity(.6)
+									a.like
+										i
+											+s(like)
+											display: inline-block
+									a.share
+										i
+											+s(share)
+											display: inline-block
+					&:hover
+						.descr
+							display: block
+
