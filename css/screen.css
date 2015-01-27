@@ -55,7 +55,7 @@ a { text-decoration: none; }
 .content .content__menu .profile { margin: 22px 30px 0 30px; padding-bottom: 15px; padding-right: 35px; border-bottom: 1px solid #090c0d; display: table; }
 .content .content__menu .profile .img { width: 38px; height: 38px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; overflow: hidden; position: relative; display: inline-block; }
 .content .content__menu .profile .img img { position: absolute; top: 50%; left: 50%; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
-.content .content__menu .profile span { color: #969899; text-transform: uppercase; display: table-cell; vertical-align: middle; padding-left: 10px; font-size: 14px; font-family: "Roboto"; font-weight: 300; }
+.content .content__menu .profile span { color: #969899; text-transform: uppercase; display: table-cell; vertical-align: middle; padding-left: 10px; font-size: 14px; font-family: "Roboto"; font-weight: 500; }
 .content .content__menu .nav ul li { width: 100%; border-bottom: 1px solid #090c0d; }
 .content .content__menu .nav ul li a { width: 100%; padding: 10px 0 7px 43px; display: inline-block; font-family: "Roboto"; font-weight: 500; font-size: 14px; color: #969899; text-decoration: none; }
 .content .content__menu .nav ul li a:hover, .content .content__menu .nav ul li a:focus { text-decoration: underline; }
@@ -126,18 +126,24 @@ a { text-decoration: none; }
 .content.landing .content__bott .about .phn p { font-family: "Roboto"; font-size: 14px; color: #fff; }
 .content.landing .content__bott .btn.regular { position: relative; left: 50%; margin-left: -85px; margin-top: 35px; }
 
-.content.list .content__menu { width: 190px; float: left; }
-.content.list .content__menu .profile { margin: 15px 30px 0 30px; padding-bottom: 15px; padding-right: 35px; border-bottom: 1px solid #090c0d; display: table; }
-.content.list .content__menu .profile .img { width: 38px; height: 38px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; overflow: hidden; position: relative; display: inline-block; }
-.content.list .content__menu .profile .img img { position: absolute; top: 50%; left: 50%; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
-.content.list .content__menu .profile span { color: #969899; text-transform: uppercase; display: table-cell; vertical-align: middle; padding-left: 10px; }
-.content.list .content__menu .nav ul li { width: 100%; border-bottom: 1px solid #090c0d; }
-.content.list .content__menu .nav ul li a { width: 100%; padding: 10px 0 15px 40px; display: inline-block; font-family: "Roboto"; font-weight: 500; color: #969899; text-decoration: none; }
-.content.list .content__menu .nav ul li a:hover, .content.list .content__menu .nav ul li a:focus { text-decoration: underline; }
-.content.list .content__menu .nav ul li a i { display: inline-block; padding-right: 20px; position: relative; top: 3px; opacity: 0.5; }
-.content.list .content__menu .nav ul li a.fd i { background: url('../img/icons-sd5c5e63e3c.png') 0 -158px no-repeat; width: 18px; height: 17px; }
-.content.list .content__menu .nav ul li a.str i { background: url('../img/icons-sd5c5e63e3c.png') 0 -441px no-repeat; width: 18px; height: 17px; }
-.content.list .content__menu .nav ul li a.exp i { background: url('../img/icons-sd5c5e63e3c.png') 0 -105px no-repeat; width: 17px; height: 17px; }
-.content.list .content__menu .nav ul li a.news i { background: url('../img/icons-sd5c5e63e3c.png') 0 -349px no-repeat; width: 16px; height: 16px; opacity: 1; }
-.content.list .content__main { display: inline-block; width: 640px; background-color: #151C1F; }
-.content.list .content__trends { float: right; width: 190px; }
+.content__main.list .cover { width: 100%; }
+.content__main.list .cover .person { height: 278px; overflow: hidden; position: relative; }
+.content__main.list .cover .person .img { width: 100%; }
+.content__main.list .cover .person .img img { width: 100%; }
+.content__main.list .cover .person .text { position: absolute; bottom: 20px; color: #fff; left: 20px; }
+.content__main.list .cover .person .text p { font-family: "Roboto"; font-weight: 500; font-size: 14px; text-transform: uppercase; }
+.content__main.list .cover .person .text h3 { font-family: "Roboto"; font-weight: 300; font-size: 28px; text-transform: uppercase; }
+.content__main.list .cover .nav ul { background-color: #1d272c; }
+.content__main.list .cover .nav ul li { width: 24.65%; display: inline-block; text-align: center; position: relative; }
+.content__main.list .cover .nav ul li a { display: block; color: #969899; padding: 10px 0; font-family: "Roboto"; font-weight: 500; text-decoration: none; }
+.content__main.list .cover .nav ul li a:hover, .content__main.list .cover .nav ul li a:focus { text-decoration: underline; }
+.content__main.list .cover .nav ul li a.is-active { border-bottom: 3px solid #26a69a; }
+.content__main.list .list { padding: 6px 6px 50px 6px; *zoom: 1; }
+.content__main.list .list:after { content: " "; display: table; clear: both; }
+.content__main.list .list .item { float: left; padding: 4px; margin-right: 4px; margin-bottom: 4px; background-color: #1a2327; }
+.content__main.list .list .item:nth-child(4n) { margin-right: 0; }
+.content__main.list .list .item .img { width: 146px; }
+.content__main.list .list .item .text { padding-top: 10px; padding-left: 10px; color: #969899; }
+.content__main.list .list .item .text .name { text-transform: uppercase; font-family: "Roboto"; font-weight: 500; color: #969899; text-decoration: none; }
+.content__main.list .list .item .text .name:hover, .content__main.list .list .item .text .name:focus { text-decoration: underline; }
+.content__main.list .list .item .text .activity { text-transform: capitalize; font-family: "Roboto"; font-weight: 500; }

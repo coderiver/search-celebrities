@@ -1,67 +1,77 @@
-.content.list
-	a
-
-	.content__menu
-		width: 190px
-		float: left
-		.profile
-			margin: 15px 30px 0 30px
-			padding-bottom: 15px 
-			padding-right: 35px 
-			border-bottom: 1px solid #090c0d
-			display: table
-			.img
-				width: 38px
-				height: 38px
-				+border-radius(50%)
-				overflow: hidden
+.content
+	&__main.list
+		.cover
+			width: 100%
+			.person
+				height: 278px 
+				overflow: hidden  
 				position: relative
-				display: inline-block
-				img
-					+vcenter
-			span
-				color: #969899
-				text-transform: uppercase 
-				display: table-cell
-				vertical-align: middle
-				padding-left: 10px 
-		.nav
-			ul
-				li
-					width: 100% 
-					border-bottom: 1px solid #090c0d
-					a
+				.img
+					width: 100%
+					img
 						width: 100% 
-						padding: 10px 0 15px 40px
+				.text
+					position: absolute
+					bottom: 20px
+					color: #fff
+					left: 20px 
+					p
+						font-family: "Roboto"
+						font-weight: 500
+						font-size: 14px 
+						text-transform: uppercase 
+					h3
+						font-family: "Roboto"
+						font-weight: 300
+						font-size: 28px 
+						text-transform: uppercase
+			.nav
+				ul
+					background-color: #1d272c 
+					li
+						width: 24.65%
 						display: inline-block
+						text-align: center
+						position: relative
+						a
+							display: block
+							color: #969899
+							padding: 10px 0
+							font-family: "Roboto"
+							font-weight: 500 
+							+hover-link
+							&.is-active
+								border-bottom: 3px solid #26a69a 
+		.list
+			padding: 6px 6px 50px 6px
+			+clr
+			.item
+				float: left
+				padding: 4px 
+				margin-right: 4px 
+				margin-bottom: 4px 
+				background-color: #1a2327 
+				&:nth-child(4n)
+					margin-right: 0
+				.img
+					width: 146px
+				.text
+					padding-top: 10px 
+					padding-left: 10px 
+					color: #969899
+					.name
+						text-transform: uppercase
 						font-family: "Roboto"
 						font-weight: 500
 						color: #969899
 						+hover-link
-						i
-							display: inline-block
-							padding-right: 20px
-							position: relative
-							top: 3px  
-							opacity: .5
-						&.fd
-							i
-								+s(fd)
-						&.str
-							i
-								+s(str)
-						&.exp
-							i
-								+s(exp)
-						&.news
-							i
-								+s(news)
-								opacity: 1
-	.content__main
-		display: inline-block
-		width: 640px 
-		background-color: #151C1F 
-	.content__trends
-		float: right
-		width: 190px 
+					.activity
+						text-transform: capitalize
+						font-family: "Roboto"
+						font-weight: 500
+
+								
+					
+
+
 		
