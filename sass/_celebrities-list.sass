@@ -1,0 +1,67 @@
+.content.list
+	a
+
+	.content__menu
+		width: 190px
+		float: left
+		.profile
+			margin: 15px 30px 0 30px
+			padding-bottom: 15px 
+			padding-right: 35px 
+			border-bottom: 1px solid #090c0d
+			display: table
+			.img
+				width: 38px
+				height: 38px
+				+border-radius(50%)
+				overflow: hidden
+				position: relative
+				display: inline-block
+				img
+					+vcenter
+			span
+				color: #969899
+				text-transform: uppercase 
+				display: table-cell
+				vertical-align: middle
+				padding-left: 10px 
+		.nav
+			ul
+				li
+					width: 100% 
+					border-bottom: 1px solid #090c0d
+					a
+						width: 100% 
+						padding: 10px 0 15px 40px
+						display: inline-block
+						font-family: "Roboto"
+						font-weight: 500
+						color: #969899
+						+hover-link
+						i
+							display: inline-block
+							padding-right: 20px
+							position: relative
+							top: 3px  
+							opacity: .5
+						&.fd
+							i
+								+s(fd)
+						&.str
+							i
+								+s(str)
+						&.exp
+							i
+								+s(exp)
+						&.news
+							i
+								+s(news)
+								opacity: 1
+	.content__main
+		display: inline-block
+		width: 640px 
+		background-color: #151C1F 
+	.content__trends
+		float: right
+		width: 190px 
+		
