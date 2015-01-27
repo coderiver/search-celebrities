@@ -29,3 +29,110 @@
 				width: 355px 
 				background-color: #151c1f
 				color: #fff
+				min-height: 657px 
+				.message
+					padding: 20px 
+					width: 315px
+					display: table
+					.img
+						width: 32px
+						height: 32px
+						+border-radius(50%)
+						display: inline-block
+						display: table-cell
+						padding-right: 10px 
+						img
+							width: 100%
+					.box
+						font-family: "Roboto" 
+						color: #fff
+						display: table-cell
+						vertical-align: top
+						.top
+							+clr
+							p.name
+								float: left
+								font-family: "Roboto"
+								font-size: 14px 
+							p.time
+								float: right
+								color: #55595b
+								font-family: "Roboto"
+								font-weight: 700 
+								font-size: 12px 
+						.msg
+							p
+								font-family: "Roboto"
+								font-size: 14px
+							.nick
+								color: #26a69a
+				.show
+					padding: 20px 
+					border-top: 1px solid #0f1416
+					border-bottom: 1px solid #0f1416
+					+clr
+					cursor: pointer 
+					p
+						float: left
+						position: relative
+						display: block
+						width: 100% 
+						color: #9a9d9e
+						font-family: "Roboto"
+						font-weight: 500  
+						font-size: 14px 
+						i
+							float: right
+							+s(down)
+							display: inline-block
+							position: absolute
+							top: 3px 
+							right: 0
+				.feedback
+					.upper
+						padding: 20px
+						color: #525759 
+						font-family: "Roboto" 
+						font-weight: 500 
+						+clr
+						.cmt
+							float: left
+							.amt
+								padding: 0 5px 
+							i
+								+s(cmt)
+								display: inline-block
+								+opacity(.6)
+								position: relative
+								top: 3px 
+
+						ul
+							+clr
+							float: right
+							li
+								display: inline-block
+								+opacity(.6)
+								padding-left: 20px 
+								a.like
+									i
+										+s(like)
+										display: inline-block
+								a.share
+									i
+										+s(share)
+										display: inline-block
+					.message-box
+						.message
+							&:nth-child(odd)
+								background-color: #13191c
+						input
+							width: 285px
+							padding: 15px
+							margin: 20px
+							color: #fff
+							background-color: #090c0d
+							+placeholder-color(#4d5050)
+							+border-radius(5px)
+							font-family: "Roboto"
+							font-weight: 500     
+							
