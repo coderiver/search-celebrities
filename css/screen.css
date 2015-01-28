@@ -142,7 +142,7 @@ a { text-decoration: none; }
 .content.landing .content__top .follow .btn input { margin: 0 5px; }
 .content.landing .content__top .follow .btn .tran { background: transparent; border: 3px solid #fff; }
 .content.landing .content__top .phones { float: right; }
-.content.landing .content__bott { margin-top: 130px; background: rgba(0, 0, 0, 0.8); padding: 40px 0; }
+.content.landing .content__bott { margin-top: 130px; background-color: rgba(0, 0, 0, 0.8); background-image: url(../img/landing_arr.png); background-repeat: no-repeat; background-position: 130px 90px; padding: 40px 0; }
 .content.landing .content__bott .title { text-transform: uppercase; color: #FFF; text-align: center; }
 .content.landing .content__bott .title p { font-size: 14px; }
 .content.landing .content__bott .title h2 { font-family: "Roboto"; font-size: 52px; font-weight: 100; }
