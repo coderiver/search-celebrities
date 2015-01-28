@@ -64,7 +64,7 @@ a
 
 // common blocks 
 .reg-pop-up
-	display: none 
+	// display: none 
 	position: absolute
 	top: 175px
 	left: 50%
@@ -104,31 +104,23 @@ a
 					font-size: 12px !important
 			label
 				color: #9da1a2
-				width: 100% 
+				width: 100% !important
 				text-align: right
 				display: block
 				cursor: pointer
 				margin: 15px 0
-				input[type="checkbox"]
+				position: relative
+				input[type="checkbox"] 
+					visibility: hidden
+				i
+					+s(check)
 					display: inline-block
-					width: 10px
-					position: relative
-					cursor: pointer 
-					padding: 10px
-					-webkit-appearance: none
-					background-color: #0c1011 
-					&:checked:after 
-						content: ''
-						position: absolute
-						top: 3px
-						left: 2px
-						+s(check)
-						transition: all .2s 
+				input[type="checkbox"]:checked + i
+					+s(checked)
+
 				span
 					padding-left: 10px 
 					vertical-align: top
-					position: relative
-					top: 10px
 			a
 				display: block
 				text-align: center
@@ -139,6 +131,7 @@ a
 				+hover-link
 .header
 	width: 100%
+	min-width: 1024px 
 	background-color: #1c262a
 	.inn
 		@extend %size
@@ -217,7 +210,7 @@ a
 			ul
 				background-color: #1d272c 
 				li
-					width: 24.65%
+					width: 24%
 					display: inline-block
 					text-align: center
 					position: relative
