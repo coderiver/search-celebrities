@@ -92,7 +92,7 @@ a { text-decoration: none; }
 .content .content__menu .nav ul li a.str i { background: url('../img/icons-s26da599db2.png') 0 -591px no-repeat; width: 18px; height: 17px; }
 .content .content__menu .nav ul li a.exp i { background: url('../img/icons-s26da599db2.png') 0 -203px no-repeat; width: 17px; height: 17px; }
 .content .content__menu .nav ul li a.news i { background: url('../img/icons-s26da599db2.png') 0 -473px no-repeat; width: 16px; height: 16px; opacity: 1; }
-.content .content__main { display: inline-block; width: 640px; background-color: #151C1F; }
+.content .content__main { display: inline-block; width: 640px; background-color: #151C1F; -moz-box-shadow: 5px 0px 5px -2px #0c1112, -5px 0px 5px -2px #0c1112; -webkit-box-shadow: 5px 0px 5px -2px #0c1112, -5px 0px 5px -2px #0c1112; box-shadow: 5px 0px 5px -2px #0c1112, -5px 0px 5px -2px #0c1112; }
 .content .content__trends { float: right; width: 190px; color: #969899; }
 .content .content__trends h4 { display: block; text-transform: uppercase; margin: 33px 45px 0px 20px; padding-bottom: 30px; border-bottom: 1px solid #090c0d; font-family: "Roboto"; font-weight: 500; font-size: 14px; }
 .content .content__trends ul { margin-left: 23px; }
@@ -121,7 +121,7 @@ a { text-decoration: none; }
 .footer__info div ul li a.tw i { background: url('../img/icons-s26da599db2.png') 0 -618px no-repeat; width: 16px; height: 16px; }
 .footer__info div ul li a.em i { background: url('../img/icons-s26da599db2.png') 0 -179px no-repeat; width: 16px; height: 14px; top: -1px; }
 .footer__bot { text-align: center; }
-.footer__bot .line { width: 100%; height: 1px; background: #12191c; margin-top: 40px; }
+.footer__bot .line { width: 100%; height: 2px; background: #12191c; margin-top: 40px; }
 .footer__bot p { text-transform: uppercase; color: #9da1a3; padding: 40px 0; font-family: "Roboto"; font-weight: 500; font-size: 14px; }
 
 .l { *zoom: 1; }
@@ -193,6 +193,7 @@ a { text-decoration: none; }
 .content__main.detail .photos .col1 .feature:hover .descr, .content__main.detail .photos .col2 .feature:hover .descr { display: block; }
 
 .out.photo { background-color: #0c1012; }
+.out.photo .content__main { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
 .out.photo .content.photo { background-color: transparent !important; }
 .out.photo .content.photo .inn { width: 1300px; margin: 0; margin-left: 20px; background-color: transparent !important; *zoom: 1; }
 .out.photo .content.photo .inn:after { content: " "; display: table; clear: both; }
@@ -225,6 +226,6 @@ a { text-decoration: none; }
 .out.photo .content.photo .inn .content__comments .feedback .upper ul li a.like i { background: url('../img/icons-s26da599db2.png') 0 -309px no-repeat; width: 18px; height: 16px; display: inline-block; }
 .out.photo .content.photo .inn .content__comments .feedback .upper ul li a.share i { background: url('../img/icons-s26da599db2.png') 0 -565px no-repeat; width: 14px; height: 16px; display: inline-block; }
 .out.photo .content.photo .inn .content__comments .feedback .message-box .message:nth-child(odd) { background-color: #13191c; }
-.out.photo .content.photo .inn .content__comments .feedback .message-box input { width: 285px; padding: 15px; margin: 20px; color: #fff; background-color: #090c0d; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; font-family: "Roboto"; font-weight: 500; }
-.out.photo .content.photo .inn .content__comments .feedback .message-box input:-moz-placeholder, .out.photo .content.photo .inn .content__comments .feedback .message-box input::-moz-placeholder { color: #4d5050; opacity: 1; }
-.out.photo .content.photo .inn .content__comments .feedback .message-box input::-webkit-input-placeholder { color: #4d5050; }
+.out.photo .content.photo .inn .content__comments .feedback .message-box textarea { width: 285px; resize: vertical; padding: 15px; margin: 20px; color: #fff; border: none; background-color: #090c0d; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; font-family: "Roboto"; font-weight: 500; }
+.out.photo .content.photo .inn .content__comments .feedback .message-box textarea:-moz-placeholder, .out.photo .content.photo .inn .content__comments .feedback .message-box textarea::-moz-placeholder { color: #4d5050; opacity: 1; }
+.out.photo .content.photo .inn .content__comments .feedback .message-box textarea::-webkit-input-placeholder { color: #4d5050; }

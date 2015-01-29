@@ -1,7 +1,9 @@
 .out.photo
 	background-color: #0c1012
+	.content__main
+		+box-shadow(none)
 	.content.photo
-		background-color: transparent !important 
+		background-color: transparent !important
 		.inn
 			width: 1300px
 			margin: 0
@@ -127,11 +129,13 @@
 						.message
 							&:nth-child(odd)
 								background-color: #13191c
-						input
+						textarea
 							width: 285px
+							resize: vertical
 							padding: 15px
 							margin: 20px
 							color: #fff
+							border: none
 							background-color: #090c0d
 							+placeholder-color(#4d5050)
 							+border-radius(5px)
