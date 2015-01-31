@@ -180,14 +180,23 @@ a
 				margin-right: 10px 
 			a
 				display: inline-block
+				color: #979a9a
+				font-size: 14px 
+				font-family: "Roboto" 
+				font-weight: 500
+				vertical-align: bottom 
 			a.bell
 				+s(bell)
 			a.phone
 				+s(phone)
 			a.down
 				+s(down)
-				position: relative
-				top: 7px
+			&.usr
+				display: none
+			&.log
+				// display: none
+				a:hover
+					text-decoration: underline 
 .content
 	width: 100% 
 	>.inn
